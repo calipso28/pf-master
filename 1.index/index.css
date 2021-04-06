@@ -1,0 +1,298 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-image: url('./index-attachments/sonja-punz-background.jpg');
+    margin: 0;
+}
+
+/* Header */
+
+header{ 
+    margin: 0px center;
+    position: relative;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+    height: 50px;
+    z-index: 10;
+}
+
+
+nav{
+padding-top: 13px;
+margin: 0px ;
+text-align: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.nav-ul{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+list-style-type: none;
+}
+
+.nav-li{
+    display: inline-block;
+}
+
+.nav-a{
+    color: white;
+    font-size: 31px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 10px;
+    padding-bottom: 9px;
+    margin: 0px 0px;
+    text-align: center;
+    opacity: 0.7;
+
+}
+
+.nav-a:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    /* text-decoration-line: overline; */
+    box-shadow: black 13px 26px 12px;
+}
+
+
+.hamburger{
+  background-color: transparent;
+  border: 0;
+  color:white;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.hamburger:focus{
+outline: none;
+}
+
+
+/* Main Container */
+
+.big{
+visibility: initial;  
+}
+
+
+/* Home Window */
+#homewindow{
+display: inline-block;
+justify-content: center;
+background-color: black;
+margin-top: 10rem;
+
+-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 3s; /* Firefox < 16 */
+ -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+     animation: fadein 3s;
+ 
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
+/* Drehanimation */
+.loader {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+    display: inline;
+    justify-content: center;
+    
+  }
+  
+  .inner {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    overflow: hidden;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 6s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 8s linear infinite;
+    border-right: 3px solid #EFEFFA;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 8s linear infinite;
+    border-top: 3px solid #EFEFFA;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+
+
+/* Welcome Überschrift */
+h1{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Subheading */
+
+.subheading{
+color: white;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  
+}
+
+/* Responsive Settings */
+
+@media screen and (max-width: 650px) {
+
+.body.show{
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-image: url('./index-attachments/sonja-punz-background.jpg');
+
+  background-blend-mode: color-dodge;
+  background-color: rgba(15, 2, 15, 0.795);
+}
+
+.big.show{
+    visibility: hidden;    
+}
+
+.nav-ul{
+display: none;
+width: 100%;
+flex-direction: column;
+}
+
+.nav-ul.show{
+display: flex;
+/* Position */
+padding-bottom: 200px ;
+padding-top: 50px;
+justify-content: space-between;
+text-align: center;
+}
+
+.nav-li{
+  margin: 4px;
+}
+
+.nav-a.show{ 
+    font-size: 35px;
+    padding: 10px 20px;
+    margin: 13px 0;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.nav-a:hover{
+    opacity: 1;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+#mobileicon{
+    opacity: 0.7;
+    transition: .3s all; 
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#mobileicon:hover{
+opacity: 1;
+transition-duration: 0.5s;
+}
+
+#mobileicon.show{
+    transition: .3s all; 
+
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+
+}
+
+.hamburger{
+  display: block;
+  }    
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+  border-radius: 100px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(179, 176, 176, 0.87); 
+  border-radius: 10px;
+}

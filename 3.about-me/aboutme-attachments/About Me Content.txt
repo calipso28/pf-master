@@ -1,0 +1,34 @@
+Absatz 1
+h1 - Hey there, I am a Website-Prototyper
+and Front-end Developer from Stuttgart, Germany
+
+Absatz 2
+P1 - Prototyping & Mockups
+P2 - I use Adobe XD to create a first visual impression
+of the website, being cost-efficient and flexible to changes
+
+Absatz 3
+P1 - Front-end Development
+P2 - Once the design is done, i develop the visual part (Front-end)
+of the websites, using the latest Frameworks and making a fluid
+working & responsive website
+
+P3 - My Tech-Stack
+P/div
+HTML
+CSS
+jQuery
+Vue.js
+Angular
+React
+PHP
+
+Colors Boxes
+
+#77846C
+#948C74
+#65637E
+#2B2D20
+#A59143
+#4C818E
+#8D6767
