@@ -83,16 +83,25 @@ outline: none;
 /* Main Section */
 
 .main{
-margin-top: 103px;
-margin-left: 47%;
-/* height: 1000px; */
-border-radius: 100px 0px 0px 0px;
+margin: 50px 25%;
 background-color: white;
 visibility: visible;
+
+-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 1.5s; /* Firefox < 16 */
+ -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+     animation: fadein 1.5s;
+ 
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
 }
 
 .profile{
-padding-top: 160px;
+padding-top: 80px;
 text-align: center;
 }
 
@@ -108,7 +117,7 @@ box-shadow:  13px 27px 26px rgba(0, 0, 0, 0.16);
 
 .profile-h2{
 margin: 0px 75px;
-margin-top: 100px;
+margin-top: 70px;
 font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 50px;
@@ -124,8 +133,8 @@ background-image:linear-gradient(90deg,#5A775E,#8B8F8B,#5A775E,#948365);
 }
 
 .separation-line-1{
-margin-top: 100px;
-margin-bottom: 140px;
+margin-top: 50px;
+margin-bottom: 100px;
 width: 223px;
 height: 1px;
 
@@ -139,7 +148,7 @@ opacity: 0.5;
 
 .servicebox{
 text-align: center;
-margin-bottom: 237px;
+margin-bottom: 120px;
 }
 
 .servicebox-img{
@@ -167,7 +176,7 @@ color: #8B8F8B;
 
 .separation-line-2{
   margin-top: -64px;
-  margin-bottom: 70px;
+      margin-bottom: 70px;
   width: 223px;
   height: 1px;
   
@@ -176,7 +185,7 @@ color: #8B8F8B;
 }
 
 .tech-stack{
-padding-bottom: 500px;
+padding-bottom: 80px;
 text-align: center;
 }
 
@@ -189,8 +198,8 @@ color: #AAAEB5;
 }
 
 .stack-holder{
-  width: 65%;
-  margin: 0px auto;
+  width: 70%;
+  margin: 0px 15%;
   /* add flexboxstyle */
 
   display: flex;
@@ -201,7 +210,8 @@ color: #AAAEB5;
 }
 
 .stackbox{
-  width: 150px;
+  width: auto;
+  padding: 0 15px;
   height: 70px;
   text-align: center;
   margin: 5px;
@@ -226,15 +236,12 @@ color: #AAAEB5;
 /* Main-Container Settings */
 @media screen and (max-width: 1535px) {
   .main{
-    margin-top: 103px;
-    margin-left: 40%;
-    /* height: 1000px; */
-    border-radius: 100px 0px 0px 0px;
+    margin: 50px 20%;
     background-color: white;
     }
     
     .profile{
-      padding-top: 120px;
+      padding-top: 80px;
     }
 
     .profile-img{
@@ -249,11 +256,11 @@ color: #AAAEB5;
 
     .separation-line-1{
     margin-top: 100px;
-    margin-bottom: 140px;
+    margin-bottom: 80px;
     }
     
     .servicebox{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     }
     
     .servicebox-img{
@@ -276,7 +283,7 @@ color: #AAAEB5;
     }
     
     .tech-stack{
-    padding-bottom: 350px;
+    padding-bottom: 80px;
     }
     
     .tech-stack-p{
@@ -284,23 +291,21 @@ color: #AAAEB5;
     }
     
     .stack-holder{
-      width: 60%;
-      margin: 0px auto;
+      width: 70%;
+      margin: 0px 15%;
       padding-left: 20px;
     }
 }
 
-@media screen and (max-width: 1340px) {
+@media screen  and (min-width:1088px) and (max-width: 1340px) {
+  
   .main{
-    margin-top: 103px;
-    margin-left: 35%;
-    /* height: 1000px; */
-    border-radius: 100px 0px 0px 0px;
+    margin-top: 50px 15%;
     background-color: white;
     }
     
     .profile{
-      padding-top: 120px;
+      padding-top: 80px;
     }
 
     .profile-img{
@@ -315,11 +320,11 @@ color: #AAAEB5;
 
     .separation-line-1{
     margin-top: 100px;
-    margin-bottom: 140px;
+    margin-bottom: 80px;
     }
     
     .servicebox{
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     }
     
     .servicebox-img{
@@ -342,7 +347,7 @@ color: #AAAEB5;
     }
     
     .tech-stack{
-    padding-bottom: 350px;
+    padding-bottom: 100px;
     }
     
     .tech-stack-p{
@@ -351,48 +356,38 @@ color: #AAAEB5;
     
     .stack-holder{
       width: 80%;
-      margin: 0px auto;
+      margin: 0px 10%;
       padding-left: 20px;
     }
 
 }
 
-@media screen and (max-width: 1236px) {
-  html,body{
-  background-size: 500%;  
-  }
-}
 
-@media screen and (min-width:802px) and (max-width: 1012px) {
+
+@media screen and (min-width:803px) and (max-width: 1087px) {
   
-  html,body{
+  .body{
     background-size: 500%;
     background-repeat: repeat;
     }
   
   .main{
-    margin-top: 103px;
-    margin-left: 10%;
-    /* height: 1000px; */
-    border-radius: 100px 0px 0px 0px;
+    margin: 50px 15%;
     background-color: white;
     }
     
     
     .stack-holder{
       width: 80%;
-      margin: 0px auto;
+      margin: 0px 15%;
       padding-left: 20px;
     }
 }
 
 /* Mobile Settings */
-@media screen and (min-width: 400px) and (max-width: 802px) {
+@media screen and (min-width: 360px) and (max-width: 802px) {
   .main{
-    margin-top: 50px;
-    margin-left: 0%;
-
-    border-radius: 100px 0px 0px 0px;
+    margin: 50px 0%; 
     background-color: white;
     }
     
@@ -412,12 +407,12 @@ color: #AAAEB5;
     
 
     .separation-line-1{
-    margin-top: 100px;
-    margin-bottom: 140px;
+    margin-top: 50px;
+    margin-bottom: 80px;
     }
     
     .servicebox{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     }
     
     .servicebox-img{
@@ -440,7 +435,7 @@ color: #AAAEB5;
     }
     
     .tech-stack{
-    padding-bottom: 200px;
+    padding-bottom: 80px;
     }
     
     .tech-stack-p{
@@ -449,40 +444,18 @@ color: #AAAEB5;
     
     .stack-holder{
       width: 70%;
-      margin: 0px auto;
+      margin: 0px 15%;
     }
-
-  
-
 }
 
-@media screen and (max-width: 460px) {
-  
-  .profile-h2{
-    font-size: 35px;
-    padding: 0;
-    margin: 0px 10px;
-    margin-top: 40px;
-    }
 
-    .separation-line-1{
-      margin-top: 60px;
-      margin-bottom: 90px;
-      }
-
-      .servicebox{
-        margin-bottom: 150px;
-        }
-
-  .servicebox-p2{
-    padding: 0 20px;
-    margin-top: -18px;
-    }
-  
-  .stack-holder{
-    width: 80%;
+/* Too Small to show */
+@media screen and (max-width: 359px) {
+  html{
+    display: none;
   }
 }
+
 
 
 /* Responsive Settings */
@@ -513,19 +486,19 @@ color: #AAAEB5;
   display: flex;
   /* Position */
   padding-bottom: 200px ;
-  padding-top: 50px;
+  padding-top: 80px;
   justify-content: space-between;
   text-align: center;
   }
   
   .nav-li{
-    margin: 4px;
+    margin: 6px;
   }
   
   .nav-a.show{ 
-      font-size: 35px;
+      font-size: 38px;
       padding: 10px 20px;
-      margin: 13px 0;
+      margin: 13px 0px;
       text-align: center;
       opacity: 0.6;
   }
