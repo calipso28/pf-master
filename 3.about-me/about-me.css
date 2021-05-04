@@ -8,21 +8,20 @@ html{
   background-repeat: no-repeat;
   background-size: 400%;
   background-image: url('aboutme-attachments/sonja-punz-background\ \(blue-edition\).png');
-    
+  overflow: overlay;
 }
 
 
 /* Header */
 
-.header{ 
+header{ 
   margin: 0px center;
   position: relative;
   padding: 0px 0px;
   padding-bottom: 10px;
-  height: 50px;
-  z-index: 10;
+  height: 80px;
+  z-index: 1;
 }
-
 
 nav{
 padding-top: 13px;
@@ -30,6 +29,9 @@ margin: 0px ;
 text-align: center;
 justify-content: space-between;
 flex-wrap: wrap;
+
+-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+animation: fadein 1.5s; 
 }
 
 .nav-ul{
@@ -41,30 +43,33 @@ list-style-type: none;
 }
 
 .nav-li{
-  display: inline-block;
-}
-
-.nav-a{
-  color: white;
-  font-size: 31px;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: 'DM Sans', sans-serif;
-  padding: 10px 10px;
-  padding-bottom: 9px;
-  margin: 0px 0px;
-  text-align: center;
-  opacity: 0.7;
-
-}
-
-.nav-a:hover{
-  opacity: 1;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 10px 0px;
+    padding-bottom: 9px;
+  }
+  
+  .nav-a{
+    color: white;
+    font-size: 31px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 15px;
+    padding-bottom: 9px;
+    margin: 0px 0px;
+    text-align: center;
+    opacity: 0.85;
+  }
+  
+  .nav-a:hover{
+    opacity: 1;
     color: rgb(255, 255, 255);
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     /* text-decoration-line: overline; */
-    box-shadow: black 13px 26px 12px;
-}
+    background-color: rgb(51, 46, 46);  
+  }
+
 
 .hamburger{
 background-color: transparent;
@@ -159,6 +164,8 @@ width: 262px;
 
 .servicebox-p1{
 margin-top: 30px;
+
+
 font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 35px;
@@ -172,6 +179,9 @@ font-family: 'DM Sans', sans-serif;
 font-weight: 500;
 font-size: 26px;
 color: #8B8F8B;
+
+hyphens: auto; 
+text-align: justify;
 }
 
 .separation-line-2{
@@ -392,7 +402,7 @@ color: #AAAEB5;
     }
     
     .profile{
-      padding-top: 80px;
+      padding-top: 15px;
     }
 
     .profile-img{
@@ -462,16 +472,26 @@ color: #AAAEB5;
 
 @media screen and (max-width: 650px) {
 
+  .body{
+    background: none;
+  }
+
   .body.show{
     background-repeat: no-repeat;
-    /* background-size: 100%; */
+    background-size: 400%;
     background-image: url('aboutme-attachments/sonja-punz-background\ \(blue-edition\).png');
   
     background-blend-mode: color-dodge;
     background-color: rgba(13, 20, 15, 0.795);
-    height: 930px;
+    height: 800px;
   }
   
+  .header{ 
+    top: 0;
+    width: 100%;
+    position: fixed;
+  }
+
   .main.show{
       visibility: hidden;    
   }
@@ -483,34 +503,39 @@ color: #AAAEB5;
   }
   
   .nav-ul.show{
-  display: flex;
-  /* Position */
-  padding-bottom: 200px ;
-  padding-top: 80px;
-  justify-content: space-between;
-  text-align: center;
-  }
+    display: flex;
+    /* Position */
+    padding-bottom: 200px ;
+    padding-top: 50px;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    }
   
   .nav-li{
-    margin: 6px;
+    margin: 4px;
+    background-color: initial;
   }
   
   .nav-a.show{ 
-      font-size: 38px;
+      font-size: 45px;
       padding: 10px 20px;
-      margin: 13px 0px;
+      margin: 13px 0;
       text-align: center;
-      opacity: 0.6;
+      opacity: 0.8;
+      background-color: none;
+      
   }
   
   .nav-a:hover{
       opacity: 1;
       border-bottom: none;
       box-shadow: none;
+      background-color: initial;
   }
   
   #mobileicon{
-      opacity: 0.7;
+      opacity: 1;
       transition: .3s all; 
   
       -webkit-transform: rotate(0deg);
@@ -520,10 +545,6 @@ color: #AAAEB5;
       transform: rotate(0deg);
   }
   
-  #mobileicon:hover{
-  opacity: 1;
-  transition-duration: 0.5s;
-  }
   
   #mobileicon.show{
       transition: .3s all; 
@@ -546,17 +567,18 @@ color: #AAAEB5;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
+  background: white;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
-  border-radius: 100px;
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 0px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(179, 176, 176, 0.87); 
-  border-radius: 10px;
+  background: linear-gradient(grey, rgb(120, 133, 101));
+  border-radius: 0px;
 }
