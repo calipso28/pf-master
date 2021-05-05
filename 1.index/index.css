@@ -180,6 +180,7 @@ to   { opacity: 1; }
 
   background-blend-mode: color-dodge;
   background-color: rgba(15, 2, 15, 0.795);
+  height: 500px;
 }
 
 .big.show{
@@ -209,8 +210,7 @@ flex-direction: column;
 .nav-ul.show{
 display: flex;
 /* Position */
-padding-bottom: 200px ;
-padding-top: 50px;
+padding-top: 20px;
 justify-content: space-between;
 text-align: center;
 width: 100%;

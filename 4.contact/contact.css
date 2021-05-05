@@ -173,6 +173,7 @@ to   { opacity: 1; }
 /* Responsive Mobile View */
 @media screen and (max-width: 650px) {
 
+
   .body.show{
     background-repeat: no-repeat;
     /* background-size: 100%; */
@@ -202,8 +203,7 @@ to   { opacity: 1; }
   .nav-ul.show{
     display: flex;
     /* Position */
-    padding-bottom: 200px ;
-    padding-top: 50px;
+    padding-top: 20px;
     justify-content: space-between;
     text-align: center;
     width: 100%;

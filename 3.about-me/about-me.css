@@ -413,6 +413,8 @@ color: #AAAEB5;
     
     .profile-h2{
     font-size: 40px;
+    margin: auto 0px;
+    margin-top: 10px;
     }
     
 
@@ -435,7 +437,7 @@ color: #AAAEB5;
     }
     
     .servicebox-p2{
-    padding: 0 80px;
+    padding: 0 10px;
     margin-top: -18px;
     }
     
@@ -453,8 +455,8 @@ color: #AAAEB5;
     }
     
     .stack-holder{
-      width: 70%;
-      margin: 0px 15%;
+      width: 90%;
+      margin: 0px 0%;
     }
 }
 
@@ -483,7 +485,6 @@ color: #AAAEB5;
   
     background-blend-mode: color-dodge;
     background-color: rgba(13, 20, 15, 0.795);
-    height: 800px;
   }
   
   .header{ 
@@ -505,8 +506,7 @@ color: #AAAEB5;
   .nav-ul.show{
     display: flex;
     /* Position */
-    padding-bottom: 200px ;
-    padding-top: 50px;
+    padding-top: 20px;
     justify-content: space-between;
     text-align: center;
     width: 100%;
